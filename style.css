@@ -1,0 +1,58 @@
+#AREA {
+	display: none;
+}
+#container {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#message {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+	color: red;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+#inputarea {
+	width: 300px;
+	position: relative;
+	text-align: center;
+}
+label {
+	cursor: pointer;
+}
+input[type="button"] {
+	width: 70px;
+	cursor: pointer;
+}
+iframe {
+	float: right;
+	position: relative !important;
+}
+
+.easy svg {
+	transform: scale(0.4) rotate(0deg) !important;
+}
+.normal svg {
+	transform: scale(0.7) rotate(0deg) !important;
+}
+svg.show-answer {
+	transition: all 2s ease-out !important;
+	transform: scale(0.2) rotate(0deg) !important;
+}
+svg > g > g {
+	opacity: 0;
+}
+.easy svg > g > g {
+	opacity: 0.3;
+}
+svg.show-answer > g > g {
+	opacity: 1 !important;
+	transition: all 2s ease-out !important;
+}
